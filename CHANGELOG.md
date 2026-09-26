@@ -8,6 +8,11 @@ e o projeto usa [Versionamento Semântico](https://semver.org/lang/pt-BR/):
 
 ## [Não lançado]
 
+### Adicionado
+
+- `manifest.json` para publicação no Posit Connect Cloud (gerado com
+  `rsconnect::writeManifest()`).
+
 ## [1.0.0] - 2026-09-26
 
 Primeira versão pública, com o nome **Croma**.

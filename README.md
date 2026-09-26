@@ -35,6 +35,18 @@ Ou direto do GitHub, sem baixar os arquivos:
 shiny::runGitHub("croma", "Marlenildo")
 ```
 
+## Publicação (Posit Connect Cloud)
+
+O repositório inclui um `manifest.json`, então pode ser publicado direto do GitHub em
+[connect.posit.cloud](https://connect.posit.cloud) (**Publish → Shiny → repositório `Marlenildo/croma`,
+branch `main`, arquivo `app.R`**). Ao adicionar ou atualizar pacotes, regenere o manifest:
+
+```r
+rsconnect::writeManifest(appPrimaryDoc = "app.R",
+  appFiles = c("app.R", "global.R", "ui.R", "server.R", "DESCRIPTION",
+               list.files("www", recursive = TRUE, full.names = TRUE)))
+```
+
 ## Formato para importação
 
 Valores separados por tabulação, uma amostra por linha:
