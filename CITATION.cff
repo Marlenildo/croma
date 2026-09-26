@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Se você usar o Croma em trabalhos acadêmicos, cite-o como abaixo."
+title: "Croma: Visualizador CIELAB / CIELCH"
+abstract: "Aplicativo Shiny para organizar, converter e documentar amostras de cor a partir de coordenadas CIELAB e CIELCH, com agrupamento de repetições, diferença de cor (CIEDE2000) e relatório em PDF."
+type: software
+authors:
+  - name: "Marlenildo"
+version: 1.0.0
+date-released: 2026-09-26
+license: MIT
+repository-code: "https://github.com/Marlenildo/croma"
+keywords:
+  - CIELAB
+  - CIELCH
+  - colorimetria
+  - cor
+  - Shiny
+  - R

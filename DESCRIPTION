@@ -1,0 +1,17 @@
+Package: croma
+Type: Shiny
+Title: Croma - Visualizador CIELAB / CIELCH
+Version: 1.0.0
+Authors@R: person("Marlenildo", role = c("aut", "cre", "cph"))
+Description: Aplicativo Shiny para organizar, converter e documentar amostras
+    de cor a partir de coordenadas CIELAB (L*, a*, b*) ou CIELCH (L*, C*, h).
+    Inclui paleta, plano cromatico a*b*, grafico L* x C*, agrupamento de
+    repeticoes (media ou mediana), diferenca de cor (CIEDE2000) e relatorio
+    em PDF.
+License: MIT + file LICENSE
+URL: https://github.com/Marlenildo/croma
+BugReports: https://github.com/Marlenildo/croma/issues
+Encoding: UTF-8
+Language: pt-BR
+Depends: R (>= 4.1.0)
+Imports: shiny (>= 1.7.0), DT, colorspace, farver, png

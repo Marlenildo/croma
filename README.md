@@ -2,6 +2,12 @@
 
 # Croma
 
+<p>
+  <a href="https://github.com/Marlenildo/croma/releases"><img alt="Versão" src="https://img.shields.io/github/v/release/Marlenildo/croma?label=vers%C3%A3o&color=2a5c92"></a>
+  <a href="LICENSE"><img alt="Licença MIT" src="https://img.shields.io/badge/licen%C3%A7a-MIT-4d965d"></a>
+  <img alt="R >= 4.1" src="https://img.shields.io/badge/R-%E2%89%A5%204.1-173b5b">
+</p>
+
 **Visualizador CIELAB / CIELCH** — organize, converta e documente suas amostras de cor com precisão.
 
 Aplicativo [Shiny](https://shiny.posit.co/) para visualizar cores a partir de coordenadas CIELAB (L\*, a\*, b\*) ou CIELCH (L\*, C\*, h°), comparar amostras e gerar um relatório em PDF com um clique.
@@ -16,9 +22,17 @@ Aplicativo [Shiny](https://shiny.posit.co/) para visualizar cores a partir de co
 
 ## Como executar
 
+Requer R 4.1 ou superior.
+
 ```r
 install.packages(c("shiny", "DT", "colorspace", "farver", "png"))
 shiny::runApp()
+```
+
+Ou direto do GitHub, sem baixar os arquivos:
+
+```r
+shiny::runGitHub("croma", "Marlenildo")
 ```
 
 ## Formato para importação
@@ -36,6 +50,29 @@ No modo CIELCH, as duas últimas colunas são C\* e h°.
 
 - `app.R`: ponto de entrada · `ui.R`: interface · `server.R`: lógica · `global.R`: conversões, gráficos e PDF
 - `www/`: estilos e imagens · `scripts/gerar_logo_app.R`: gera a logo do app a partir de cores CIELCH
+- `DESCRIPTION`: versão e dependências · `CHANGELOG.md`: histórico · `CITATION.cff`: citação · `LICENSE`: licença MIT
+
+## Versões e novidades
+
+O projeto segue [Versionamento Semântico](https://semver.org/lang/pt-BR/). A versão atual está no arquivo
+[`DESCRIPTION`](DESCRIPTION) e aparece no rodapé do app e do PDF. As mudanças de cada versão estão no
+[`CHANGELOG.md`](CHANGELOG.md) e nas [releases](https://github.com/Marlenildo/croma/releases).
+
+Para lançar uma nova versão:
+
+1. Atualize `Version:` no `DESCRIPTION` e `version:`/`date-released:` no `CITATION.cff`.
+2. Mova os itens de **[Não lançado]** para uma nova seção no `CHANGELOG.md`.
+3. Faça o commit, crie a tag e envie: `git tag -a vX.Y.Z -m "Croma vX.Y.Z" && git push --follow-tags`.
+
+## Como citar
+
+Se o Croma ajudou no seu trabalho, cite-o usando os dados do arquivo [`CITATION.cff`](CITATION.cff)
+(o GitHub mostra o botão **"Cite this repository"** na página do projeto).
+
+## Licença
+
+Distribuído sob a licença [MIT](LICENSE). Você pode usar, modificar e distribuir livremente,
+mantendo o aviso de copyright.
 
 ---
 

@@ -8,6 +8,9 @@ library(colorspace)
   if (is.null(x) || length(x) == 0) y else x
 }
 
+# Versão lida do DESCRIPTION (fonte única; atualize lá e no CHANGELOG.md).
+VERSAO_APP <- tryCatch(unname(read.dcf("DESCRIPTION", fields = "Version")[1, 1]), error = function(e) "dev")
+
 CORES_APP <- list(
   navy = "#173B5B", blue = "#2A5C92", ink = "#263B4D", muted = "#627589",
   line = "#D9E3EB", canvas = "#F4F7FA", soft = "#EAF2FA", green = "#4D965D"
@@ -353,7 +356,7 @@ gerar_relatorio_pdf <- function(arquivo, titulo, descricao, dados, origem, respo
     } else text(.105, .034, "Marlenildo", adj = c(0, .5), cex = .66, font = 2, col = "#587086")
     text(.5, .034, texto_pdf("Cores em sRGB (D65, observador 2°). Valores fora do gamut foram ajustados para exibição."),
          adj = c(.5, .5), cex = .56, col = "#8A9AAA")
-    text(.955, .034, texto_pdf(paste("Gerado em", data_hora)), adj = c(1, .5), cex = .64, col = "#587086")
+    text(.955, .034, texto_pdf(paste0("Gerado em ", data_hora, "  |  Croma v", VERSAO_APP)), adj = c(1, .5), cex = .64, col = "#587086")
   }
 
   rotulo <- function(x, y, txt) text(x, y, texto_pdf(txt), adj = c(0, .5), cex = .66, font = 2, col = CORES_APP$blue)

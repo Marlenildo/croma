@@ -42,3 +42,4 @@ input[type="checkbox"],input[type="radio"] { width:16px; height:16px; margin:0 7
 /* Marca Croma */
 .cabecalho-app .titulo { font-size:36px; letter-spacing:-.8px; margin-top:0; }.descricao-app { color:var(--blue); font-size:16px; font-weight:800; margin-top:2px; }
 @media(max-width:767px) { .cabecalho-app .titulo { font-size:28px; }.descricao-app { font-size:14px; } }
+.versao-app { border-left:1px solid var(--line); padding-left:10px; margin-left:2px; }.versao-app a { color:#718498; font-weight:700; }.versao-app a:hover { color:var(--blue); }
