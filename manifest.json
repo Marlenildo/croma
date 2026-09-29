@@ -1295,6 +1295,9 @@
     "ui.R": {
       "checksum": "364ba5e81924f0977588c3edf61361a3"
     },
+    "www/ads.txt": {
+      "checksum": "8c1ec6b15a2f0581c05590efa611d39f"
+    },
     "www/css/app.css": {
       "checksum": "ef13f9e680ff36bf7c20cd02329b849f"
     },

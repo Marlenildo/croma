@@ -12,6 +12,7 @@ e o projeto usa [Versionamento Semântico](https://semver.org/lang/pt-BR/):
 
 - `manifest.json` para publicação no Posit Connect Cloud (gerado com
   `rsconnect::writeManifest()`).
+- Script do Google AdSense e `ads.txt` para monetização do app.
 
 ## [1.0.0] - 2026-09-26
 
