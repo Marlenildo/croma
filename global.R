@@ -351,7 +351,7 @@ gerar_relatorio_pdf <- function(arquivo, titulo, descricao, dados, origem, respo
     segments(.045, .06, .955, .06, col = CORES_APP$line)
     text(.045, .034, "Desenvolvido por", adj = c(0, .5), cex = .62, col = "#587086")
     if (!is.null(logo_autor)) {
-      alt <- .052; larg <- alt * (ncol(logo_autor) / nrow(logo_autor)) * 8.27 / 11.69
+      alt <- .028; larg <- alt * (ncol(logo_autor) / nrow(logo_autor)) * 8.27 / 11.69
       rasterImage(logo_autor, .11, .033 - alt / 2, .11 + larg, .033 + alt / 2, interpolate = TRUE)
     } else text(.105, .034, "Marlenildo", adj = c(0, .5), cex = .66, font = 2, col = "#587086")
     text(.5, .034, texto_pdf("Cores em sRGB (D65, observador 2°). Valores fora do gamut foram ajustados para exibição."),
