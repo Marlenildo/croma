@@ -32,6 +32,7 @@ input[type="checkbox"],input[type="radio"] { width:16px; height:16px; margin:0 7
 /* Logos */
 .logo-app { width:78px; height:78px; flex:none; filter:drop-shadow(0 4px 10px rgba(23,59,91,.18)); }
 .rodape-app { display:flex; align-items:center; justify-content:center; gap:10px; padding:14px 0 4px; }.logo-rodape { height:26px; width:auto; }
+.link-logo-rodape { display:inline-flex; line-height:0; border-radius:4px; transition:opacity .15s; }.link-logo-rodape:hover { opacity:.8; }
 
 /* Agrupamento de repetições */
 .caixa-grupos { background:#f8fbf9; border:1px solid #d5e8da; border-radius:10px; padding:14px 16px 6px; margin:4px 0 16px; }.caixa-grupos .checkbox { margin-top:4px; }.caixa-grupos .checkbox label { font-size:14px; color:var(--navy); }
